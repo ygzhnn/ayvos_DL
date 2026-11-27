@@ -1,0 +1,10 @@
+# Bu projede kullanılan paketler (test edilen sürümler).
+# Kurulum:  pip install -r requirements.txt
+# Yalnızca doğrudan kullandıklarımız yazıldı, bağımlılıkları (pillow, kiwisolver vb.) pip kendisi kurar.
+
+opencv-python==5.1.0.95   # cv2: görüntü işleme, SIFT/ORB/FAST, video
+numpy==2.5.5              # sayı tabloları, convolution ve CNN örnekleri
+matplotlib==3.11.2        # kernel grafikleri (02_gaussian_blur/kernel_cizim.py)
+
+# Not: SURF ve BRISK bu OpenCV sürümünde yok. Denemek istersen opencv-python yerine
+# opencv-contrib-python kur (ikisini birlikte kurma, çakışırlar).
